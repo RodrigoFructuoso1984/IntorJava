@@ -3,12 +3,39 @@ package intro;
 
 // 2 - Referência bibliotecas
 
+import java.security.spec.RSAOtherPrimeInfo;
+
 // 3 - Classe
 public class Medidas {
     // 3.1 - Atributos - Características
 
     // 3.2 - Métodos e Funções
     public static void main(String[] args){
+        // Condicional = verificar uma condicao - fazer uma pergunta para uma pessoa, um hardware ou software
+        // switch = selecionar o comportamento do programa conforme a escolha da pessoa ou do software.
+
+        String opcao = "ifSimples";
+        switch (opcao){
+            case "ifSimples":
+                System.out.println("Voce escolheu executar o metodo ifSimples");
+                ifSimples();
+                break;
+
+            case "curto":
+                System.out.println("Voce escolheu executar o metodo calcularAreaModoCurto");
+                calcularAreaModoCurto();
+                break;
+
+            case "extenso":
+                System.out.println("Voce escolheu executar o metodo calcularAreaModoExtenso");
+                calcularAreaModoExtenso();
+                break;
+
+            default:
+                System.out.println("Voce escolheu executar o metodo calcularAreaModoExtenso");
+                calcularAreaModoExtenso();
+                break;
+        }
 
     }
 
