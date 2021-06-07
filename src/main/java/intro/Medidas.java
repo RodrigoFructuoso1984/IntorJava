@@ -32,8 +32,7 @@ public class Medidas {
                 break;
 
             default:
-                System.out.println("Voce escolheu executar o metodo calcularAreaModoExtenso");
-                calcularAreaModoExtenso();
+                System.out.println("Voce escolheu outro valor que nao tem uma acao associada");
                 break;
         }
 
