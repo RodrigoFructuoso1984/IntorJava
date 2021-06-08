@@ -4,6 +4,7 @@ package intro;
 // 2 - Referência bibliotecas
 
 import java.security.spec.RSAOtherPrimeInfo;
+import java.util.Scanner;
 
 // 3 - Classe
 public class Medidas {
@@ -12,21 +13,37 @@ public class Medidas {
     // 3.2 - Métodos e Funções
     public static void main(String[] args){
         // Condicional = verificar uma condicao - fazer uma pergunta para uma pessoa, um hardware ou software
+
+        // utilizar a classe Scanner do JAVA para ler a escolha do usuario no console
+
         // switch = selecionar o comportamento do programa conforme a escolha da pessoa ou do software.
 
-        String opcao = "ifSimples";
+        //String opcao = "melancia";
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("MENU DE OPCOES");
+        System.out.println("C - Calcular Area Modo Curto");
+        System.out.println("E - Calcular Area modo Extenso");
+        System.out.println("I - If simples");
+        System.out.println("Digite a opcao desejada: ");
+        String opcao = scanner.next();
+
         switch (opcao){
-            case "ifSimples":
+            case "I":
+            case "i":
                 System.out.println("Voce escolheu executar o metodo ifSimples");
                 ifSimples();
                 break;
 
-            case "curto":
+            case "C":
+            case "c":
                 System.out.println("Voce escolheu executar o metodo calcularAreaModoCurto");
                 calcularAreaModoCurto();
                 break;
 
-            case "extenso":
+            case "E":
+            case "e":
                 System.out.println("Voce escolheu executar o metodo calcularAreaModoExtenso");
                 calcularAreaModoExtenso();
                 break;
