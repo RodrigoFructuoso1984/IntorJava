@@ -24,28 +24,35 @@ public class Medidas {
 
         System.out.println("MENU DE OPCOES");
         System.out.println("C - Calcular Area Modo Curto");
+        System.out.println("D - Contar Ate Dez");
         System.out.println("E - Calcular Area modo Extenso");
         System.out.println("I - If simples");
         System.out.println("Digite a opcao desejada: ");
         String opcao = scanner.next();
 
         switch (opcao){
-            case "I":
-            case "i":
-                System.out.println("Voce escolheu executar o metodo ifSimples");
-                ifSimples();
-                break;
-
             case "C":
             case "c":
                 System.out.println("Voce escolheu executar o metodo calcularAreaModoCurto");
                 calcularAreaModoCurto();
                 break;
 
+            case "D":
+            case "d":
+                System.out.println("Voce escolheu executar o metodo contarAteDez");
+                contarAteDez();
+                break;
+
             case "E":
             case "e":
                 System.out.println("Voce escolheu executar o metodo calcularAreaModoExtenso");
                 calcularAreaModoExtenso();
+                break;
+
+            case "I":
+            case "i":
+                System.out.println("Voce escolheu executar o metodo ifSimples");
+                ifSimples();
                 break;
 
             default:
@@ -94,6 +101,15 @@ public class Medidas {
 
         System.out.println("Para a largura de " + largura + "m e o comprimento de " +
                 comprimento + "m a area e de " + resultado + "m²");
+    }
+
+    public static void contarAteDez(){
+        // Loops ou Repeticoes
+        // For = repeticao incondicional
+
+        for (int numero = 1; numero <= 10; numero++){
+            System.out.println(numero);
+        }
     }
 
 }
