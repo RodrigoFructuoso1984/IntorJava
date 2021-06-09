@@ -27,6 +27,7 @@ public class Medidas {
         System.out.println("D - Contar Ate Dez");
         System.out.println("E - Calcular Area modo Extenso");
         System.out.println("I - If simples");
+        System.out.println("R - Contagem Regressiva");
         System.out.println("Digite a opcao desejada: ");
         String opcao = scanner.next();
 
@@ -53,6 +54,12 @@ public class Medidas {
             case "i":
                 System.out.println("Voce escolheu executar o metodo ifSimples");
                 ifSimples();
+                break;
+
+            case "R":
+            case "r":
+                System.out.println("Voce escolheu executar o metodo contagemRegressiva");
+                contagemRegressiva();
                 break;
 
             default:
@@ -108,6 +115,14 @@ public class Medidas {
         // For = repeticao incondicional
 
         for (int numero = 1; numero <= 10; numero++){
+            System.out.println(numero);
+        }
+    }
+
+    public static void contagemRegressiva(){
+        System.out.println("Contegem Regressiva");
+
+        for (int numero = 10; numero > -1; numero--){
             System.out.println(numero);
         }
     }
